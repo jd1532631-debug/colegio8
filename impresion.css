@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Colegio8 — Estilos para vistas de impresión / exportación a PDF
+   (activadas por la clase/enlace "Imprimir / PDF" en reportes).
+   ========================================================================== */
+
+@media print {
+  .barra-lateral, .barra-superior, .pie-publico, .btn, .paginador,
+  .acciones-fila, .toast-region, .no-imprimir {
+    display: none !important;
+  }
+
+  body { background: #fff; color: #000; font-size: 11pt; }
+  .contenido, .caja-publico-cuerpo { max-width: 100%; padding: 0; }
+
+  .tarjeta { box-shadow: none; border: 1px solid #ddd; page-break-inside: avoid; }
+
+  .tabla th { background: #eee !important; color: #000; }
+
+  a[href]::after { content: ""; }
+
+  .cabecera-impresion { display: flex; align-items: center; gap: .6rem; margin-bottom: 1rem; }
+  .cabecera-impresion .escudo { width: 44px; height: 44px; }
+}
+
+.cabecera-impresion { display: none; }
+
+/* Vista en pantalla de la versión "listo para imprimir" */
+.pagina-impresion {
+  background: #fff;
+  padding: 2rem;
+  border-radius: var(--radio);
+  border: var(--borde);
+  max-width: 100%;
+}
+.pagina-impresion h1 { font-size: 1.3rem; }
+.pagina-impresion .meta {
+  display: flex; gap: 1.5rem; flex-wrap: wrap;
+  color: var(--gris-500); font-size: .85rem; margin-bottom: 1rem;
+}
+.pagina-impresion table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+.pagina-impresion th, .pagina-impresion td { border: 1px solid #d1d5db; padding: .4rem .55rem; text-align: left; }
+.pagina-impresion th { background: var(--gris-100); font-size: .72rem; text-transform: uppercase; letter-spacing: .04em; }

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 72" role="img" aria-label="Escudo Colegio8">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#166534"/>
+      <stop offset="1" stop-color="#052e16"/>
+    </linearGradient>
+  </defs>
+  <path d="M32 2 58 11v24c0 17-11 30-26 35C17 65 6 52 6 35V11Z" fill="url(#g)"/>
+  <path d="M32 9 52 16v19c0 13.5-8.5 24.5-20 29-11.5-4.5-20-15.5-20-29V16Z" fill="none" stroke="#22c55e" stroke-opacity=".55" stroke-width="2"/>
+  <circle cx="32" cy="35" r="17" fill="none" stroke="#ffffff" stroke-opacity=".92" stroke-width="2.4"/>
+  <text x="32" y="42" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="bold" fill="#ffffff">8</text>
+  <path d="M18 55h28c0 6-3 10-9 11l-5-5-5 5c-6-1-9-5-9-11Z" fill="#ffffff" fill-opacity=".08"/>
+</svg>

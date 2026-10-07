@@ -1,0 +1,7 @@
+# Colegio8 — archivos que nunca deben subirse al repositorio
+app/config.php
+public/uploads/*
+!public/uploads/.htaccess
+!public/uploads/index.html
+*.log
+.DS_Store
